@@ -1,4 +1,4 @@
-// funciones de conversión
+//funciones de conversión
 const fromEuroToDollar = function(euro) {
     let dollar = euro * 1.20;
     return roundToTwo(dollar);
@@ -14,14 +14,12 @@ const FromYenToPound = function(yen) {
     return roundToTwo(pound);
 }
 
-//Función de redondeo a 2 decimales
+//función de redondeo a 2 decimales
 function roundToTwo(num) {
     return +(Math.round(num + "e+2") + "e-2");
 }
 
-
-
-// exporta la función para usarla en otros archivos 
+//exportacion de funciones para usarla en otros archivos
 module.exports = {
     fromEuroToDollar,
     fromDollarToYen,
